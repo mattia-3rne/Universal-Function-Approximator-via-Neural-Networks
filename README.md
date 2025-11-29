@@ -64,10 +64,10 @@ $$
 
 ### Backpropagation & The Chain Rule
 
-To train the network, we minimize the **Mean Squared Error (MSE)** loss function $J$. We compute the gradient of $J$ with respect to the weights using the Chain Rule.
+To train the network, we minimize the **Mean Squared Error** loss function $J$. We compute the gradient of $J$ with respect to the weights using the Chain Rule.
 
 **Step A: Error at Output**<br>
-First, we calculate the derivative of the loss with respect to the output layer's input ($Z^{[2]}$). Since the output activation is linear for regression:
+First, we calculate the derivative of the loss with respect to the output layer's input. Since the output activation is linear for regression:
 
 $$
 \delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)
@@ -101,7 +101,7 @@ This repository contains three separate Jupyter Notebooks, each implementing the
 | :--- | :--- | :--- |
 | `BGD.ipynb` | **Batch Gradient Descent** | Uses the **entire dataset** to calculate the gradient for a single update step. Stable but computationally expensive. |
 | `SGD.ipynb` | **Stochastic Gradient Descent** | Uses a **single random sample** for each update. Highly noisy but converges faster per epoch. |
-| `MBGD.ipynb`| **Mini-Batch Gradient Descent** | Uses a **subset of samples** (e.g., 32 or 64) per update. Balances the stability of BGD with the speed of SGD. |
+| `MBGD.ipynb`| **Mini-Batch Gradient Descent** | Uses a **subset of samples** per update. Balances the stability of BGD with the speed of SGD. |
 
 ---
 
