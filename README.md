@@ -59,12 +59,21 @@ $$\delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)$$
 
 **Step B: Propagating to Hidden Layer**<br>
 We propagate the error backwards to the hidden layer. This requires the **Hadamard product** ($\odot$), which is element-wise multiplication, to apply the derivative of the activation function:
-$$\delta^{[1]} = (\delta^{[2]} \cdot W^{[2]T}) \odot \sigma'(Z^{[1]})$$
+
+$$
+\delta^{[1]} = (\delta^{[2]} \cdot W^{[2]T}) \odot \sigma'(Z^{[1]})
+$$
 
 **Step C: Gradients for Updates**<br>
 Finally, we calculate the gradients for the weights and biases:
-$$\frac{\partial J}{\partial W^{[2]}} = A^{[1]T} \cdot \delta^{[2]}$$
-$$\frac{\partial J}{\partial W^{[1]}} = X^T \cdot \delta^{[1]}$$
+
+$$
+\frac{\partial J}{\partial W^{[2]}} = A^{[1]T} \cdot \delta^{[2]}
+$$
+
+$$
+\frac{\partial J}{\partial W^{[1]}} = X^T \cdot \delta^{[1]}
+$$
 
 ---
 
