@@ -62,7 +62,7 @@ $$
 \hat{Y} = Z^{[2]}
 $$
 
-### Backpropagation & The Chain Rule
+### Backpropagation
 
 To train the network, we minimize the **Mean Squared Error** loss function $J$. We compute the gradient of $J$ with respect to the weights using the Chain Rule.
 
