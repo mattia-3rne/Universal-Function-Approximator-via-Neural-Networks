@@ -1,6 +1,6 @@
 # Universal Function Approximation via Neural Network
 
-## 📊 Project Overview
+## Project Overview
 
 The goal of this project is to demonstrate the **Universal Approximation Theorem** by constructing a Neural Network from scratch. This implementation proves that a feedforward neural network with a single hidden layer can approximate any continuous function (such as $\sin(x)$ or $x^2$) given sufficient neurons and appropriate training.
 
