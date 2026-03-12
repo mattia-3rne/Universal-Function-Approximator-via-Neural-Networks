@@ -8,7 +8,7 @@ The project demonstrates the mathematics behind neural networks without the abst
 
 ---
 
-## 🧠 Theoretical Background
+## Theoretical Background
 
 ### The Universal Approximation Theorem
 
@@ -93,7 +93,7 @@ $$
 
 ---
 
-## 📉 Optimization Methods
+## Optimization Methods
 
 This repository contains three separate Jupyter Notebooks, each implementing the approximation using a different optimization strategy. Below is a detailed breakdown of each method used in this project.
 
@@ -162,7 +162,7 @@ $$
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 * Python 3.8+
@@ -187,7 +187,7 @@ $$
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 * `SGD.ipynb`: Stochastic Gradient Descent.
 * `BGD.ipynb`: Batch Gradient Descent.
